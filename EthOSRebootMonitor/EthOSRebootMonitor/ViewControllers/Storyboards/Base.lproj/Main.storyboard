@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -766,13 +767,57 @@
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
-        <!--View Controller-->
+        <!--Ethos Panel Letters View Controller-->
         <scene sceneID="I0A-ZO-8XI">
             <objects>
-                <viewController id="6DD-Wv-KNZ" sceneMemberID="viewController">
+                <viewController id="6DD-Wv-KNZ" customClass="EthosPanelLettersViewController" customModule="EthOSRebootMonitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="bga-jZ-Enc">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="et7-Oj-14y">
+                                <rect key="frame" x="124" y="243" width="203" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="What's your ethOS panel letters?" id="GSb-00-FGs">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J0y-kd-u8L">
+                                <rect key="frame" x="176" y="213" width="99" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="12346" drawsBackground="YES" id="ed1-Zv-Exv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-uo-jDl">
+                                <rect key="frame" x="191" y="33" width="69" height="32"/>
+                                <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FTq-Yh-S4l">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mrJ-Hr-uAZ">
+                                <rect key="frame" x="136" y="142" width="179" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Panel Link:  .ethosdistro.com" id="6Tw-Ya-vGP">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="J0y-kd-u8L" firstAttribute="centerX" secondItem="bga-jZ-Enc" secondAttribute="centerX" id="4K3-DT-NLY"/>
+                            <constraint firstItem="et7-Oj-14y" firstAttribute="centerX" secondItem="bga-jZ-Enc" secondAttribute="centerX" id="93g-Sc-IMe"/>
+                            <constraint firstItem="J0y-kd-u8L" firstAttribute="width" secondItem="et7-Oj-14y" secondAttribute="width" multiplier="0.5" id="CGO-Vx-OAC"/>
+                            <constraint firstItem="et7-Oj-14y" firstAttribute="top" secondItem="bga-jZ-Enc" secondAttribute="top" constant="40" id="Cse-AU-gDr"/>
+                            <constraint firstItem="J0y-kd-u8L" firstAttribute="top" secondItem="et7-Oj-14y" secondAttribute="bottom" constant="8" id="GDI-3L-wRU"/>
+                            <constraint firstItem="uPB-uo-jDl" firstAttribute="centerX" secondItem="bga-jZ-Enc" secondAttribute="centerX" id="Th3-oU-uqh"/>
+                            <constraint firstItem="mrJ-Hr-uAZ" firstAttribute="centerX" secondItem="bga-jZ-Enc" secondAttribute="centerX" id="h4E-bm-huz"/>
+                            <constraint firstAttribute="bottom" secondItem="uPB-uo-jDl" secondAttribute="bottom" constant="40" id="oFw-iL-5Gz"/>
+                            <constraint firstItem="mrJ-Hr-uAZ" firstAttribute="centerY" secondItem="bga-jZ-Enc" secondAttribute="centerY" id="pbh-7j-Das"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="Zxb-sn-TjU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -790,7 +835,7 @@
                 </viewController>
                 <customObject id="odK-M7-iHl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="870"/>
+            <point key="canvasLocation" x="658" y="1124"/>
         </scene>
     </scenes>
 </document>
