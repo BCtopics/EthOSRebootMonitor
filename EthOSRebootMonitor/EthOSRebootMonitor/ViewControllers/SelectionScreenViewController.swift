@@ -16,13 +16,18 @@ class SelectionScreenViewController: NSViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        // Closes initial viewController after selected yes or no
+        self.view.window?.close()
+    }
+    
     //MARK: - IBActions
     
     @IBAction func yesButtonTapped(_ sender: Any) {
-        // Perform segue to the automatic entry version
+        performSegue(withIdentifier:NSStoryboardSegue.Identifier.init("yesSegue") , sender: self)
     }
     
     @IBAction func noButtonTapped(_ sender: Any) {
-        // Perform segue to the manual entry version
+        performSegue(withIdentifier:NSStoryboardSegue.Identifier.init("noSegue") , sender: self)
     }
 }

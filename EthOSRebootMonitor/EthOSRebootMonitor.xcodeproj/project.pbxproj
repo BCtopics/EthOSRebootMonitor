@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B9F2F1721260FB200081A06 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F2F1521260FB200081A06 /* ManualViewController.swift */; };
 		6BB537032125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537042125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537052125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
@@ -60,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B9F2F1521260FB200081A06 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		6BB537022125FE1F003CB3EF /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
 		6BB537082125FEF8003CB3EF /* EthOSRebootMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BB537092125FEF8003CB3EF /* EthOSRebootMonitorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitorTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		6BC3AC8F2125FAD400444CC0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6B9F2F1521260FB200081A06 /* ManualViewController.swift */,
 				6BB53710212609B8003CB3EF /* SelectionScreenViewController.swift */,
 				6BB5370F21260974003CB3EF /* Storyboards */,
 			);
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */,
+				6B9F2F1721260FB200081A06 /* ManualViewController.swift in Sources */,
 				6BB53711212609B8003CB3EF /* SelectionScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
