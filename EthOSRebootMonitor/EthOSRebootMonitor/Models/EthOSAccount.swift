@@ -12,6 +12,18 @@ class EthOSAccount {
     
     //MARK: - Properties
     
-    var panelID: PanelID?
+    let panelID: PanelID?
+    var rigs = [Rig]()
+    
+    let totalHash: Double
+    let totalWatts: Double
+    let aliveGPUS: Double
+    let totalRigs: Double
+    let currentVersion: String
+    let avgTemp: Double
+    let capacity: String
+    
+    //MARK: - Initializers
+    
     
 }
