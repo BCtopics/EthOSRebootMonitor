@@ -11,6 +11,7 @@
 		6BB537042125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537052125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537072125FEDC003CB3EF /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BB53711212609B8003CB3EF /* SelectionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB53710212609B8003CB3EF /* SelectionScreenViewController.swift */; };
 		6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AC5E2125FA3F00444CC0 /* AppDelegate.swift */; };
 		6BC3AC632125FA4000444CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3AC622125FA4000444CC0 /* Assets.xcassets */; };
 		6BC3AC662125FA4000444CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3AC642125FA4000444CC0 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		6BB537082125FEF8003CB3EF /* EthOSRebootMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BB537092125FEF8003CB3EF /* EthOSRebootMonitorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BB5370A2125FEF8003CB3EF /* EthOSRebootMonitorUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitorUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6BB53710212609B8003CB3EF /* SelectionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreenViewController.swift; sourceTree = "<group>"; };
 		6BC3AC5B2125FA3F00444CC0 /* EthOSRebootMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthOSRebootMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3AC5E2125FA3F00444CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BC3AC622125FA4000444CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BB5370F21260974003CB3EF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3AC642125FA4000444CC0 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		6BC3AC522125FA3F00444CC0 = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +212,8 @@
 		6BC3AC8F2125FAD400444CC0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6BC3AC642125FA4000444CC0 /* Main.storyboard */,
+				6BB53710212609B8003CB3EF /* SelectionScreenViewController.swift */,
+				6BB5370F21260974003CB3EF /* Storyboards */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */,
+				6BB53711212609B8003CB3EF /* SelectionScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
