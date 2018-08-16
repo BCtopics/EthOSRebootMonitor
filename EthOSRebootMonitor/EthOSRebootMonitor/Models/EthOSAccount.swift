@@ -12,6 +12,6 @@ class EthOSAccount {
     
     //MARK: - Properties
     
-    var panelID = "ethosdistro.com"
+    var panelID: PanelID?
     
 }

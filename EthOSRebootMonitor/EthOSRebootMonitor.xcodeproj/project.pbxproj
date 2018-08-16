@@ -10,6 +10,7 @@
 		6B9F2F1721260FB200081A06 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F2F1521260FB200081A06 /* ManualViewController.swift */; };
 		6B9F2F1B212612F000081A06 /* EthosPanelLettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F2F19212612F000081A06 /* EthosPanelLettersViewController.swift */; };
 		6B9F2F202126133B00081A06 /* EthOSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F2F1F2126133B00081A06 /* EthOSAccount.swift */; };
+		6B9F2F22212615E000081A06 /* PanelID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F2F21212615E000081A06 /* PanelID.swift */; };
 		6BB537032125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537042125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
 		6BB537052125FE1F003CB3EF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB537022125FE1F003CB3EF /* NMSSH.framework */; };
@@ -66,6 +67,7 @@
 		6B9F2F1521260FB200081A06 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		6B9F2F19212612F000081A06 /* EthosPanelLettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthosPanelLettersViewController.swift; sourceTree = "<group>"; };
 		6B9F2F1F2126133B00081A06 /* EthOSAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthOSAccount.swift; sourceTree = "<group>"; };
+		6B9F2F21212615E000081A06 /* PanelID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelID.swift; sourceTree = "<group>"; };
 		6BB537022125FE1F003CB3EF /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
 		6BB537082125FEF8003CB3EF /* EthOSRebootMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BB537092125FEF8003CB3EF /* EthOSRebootMonitorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthOSRebootMonitorTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				6B9F2F1F2126133B00081A06 /* EthOSAccount.swift */,
+				6B9F2F21212615E000081A06 /* PanelID.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				6B9F2F202126133B00081A06 /* EthOSAccount.swift in Sources */,
 				6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */,
 				6B9F2F1B212612F000081A06 /* EthosPanelLettersViewController.swift in Sources */,
+				6B9F2F22212615E000081A06 /* PanelID.swift in Sources */,
 				6B9F2F1721260FB200081A06 /* ManualViewController.swift in Sources */,
 				6BB53711212609B8003CB3EF /* SelectionScreenViewController.swift in Sources */,
 			);
