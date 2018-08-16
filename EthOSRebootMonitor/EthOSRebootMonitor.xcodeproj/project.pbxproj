@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AC5E2125FA3F00444CC0 /* AppDelegate.swift */; };
-		6BC3AC612125FA3F00444CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AC602125FA3F00444CC0 /* ViewController.swift */; };
 		6BC3AC632125FA4000444CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3AC622125FA4000444CC0 /* Assets.xcassets */; };
 		6BC3AC662125FA4000444CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3AC642125FA4000444CC0 /* Main.storyboard */; };
 		6BC3AC722125FA4000444CC0 /* EthOSRebootMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AC712125FA4000444CC0 /* EthOSRebootMonitorTests.swift */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		6BC3AC5B2125FA3F00444CC0 /* EthOSRebootMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthOSRebootMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3AC5E2125FA3F00444CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BC3AC602125FA3F00444CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6BC3AC622125FA4000444CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC3AC652125FA4000444CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BC3AC672125FA4000444CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,11 +95,13 @@
 			isa = PBXGroup;
 			children = (
 				6BC3AC5E2125FA3F00444CC0 /* AppDelegate.swift */,
-				6BC3AC602125FA3F00444CC0 /* ViewController.swift */,
-				6BC3AC622125FA4000444CC0 /* Assets.xcassets */,
-				6BC3AC642125FA4000444CC0 /* Main.storyboard */,
-				6BC3AC672125FA4000444CC0 /* Info.plist */,
 				6BC3AC682125FA4000444CC0 /* EthOSRebootMonitor.entitlements */,
+				6BC3AC8B2125FAC200444CC0 /* Networking */,
+				6BC3AC8C2125FAC600444CC0 /* Models */,
+				6BC3AC8D2125FACC00444CC0 /* ModelControllers */,
+				6BC3AC8E2125FAD100444CC0 /* Views */,
+				6BC3AC8F2125FAD400444CC0 /* ViewControllers */,
+				6BC3AC8A2125FA9500444CC0 /* Resources */,
 			);
 			path = EthOSRebootMonitor;
 			sourceTree = "<group>";
@@ -122,6 +122,51 @@
 				6BC3AC7E2125FA4000444CC0 /* Info.plist */,
 			);
 			path = EthOSRebootMonitorUITests;
+			sourceTree = "<group>";
+		};
+		6BC3AC8A2125FA9500444CC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3AC622125FA4000444CC0 /* Assets.xcassets */,
+				6BC3AC672125FA4000444CC0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BC3AC8B2125FAC200444CC0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6BC3AC8C2125FAC600444CC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BC3AC8D2125FACC00444CC0 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		6BC3AC8E2125FAD100444CC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BC3AC8F2125FAD400444CC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3AC642125FA4000444CC0 /* Main.storyboard */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC3AC612125FA3F00444CC0 /* ViewController.swift in Sources */,
 				6BC3AC5F2125FA3F00444CC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8EMAYLL43;
-				INFOPLIST_FILE = EthOSRebootMonitor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EthOSRebootMonitor/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -442,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8EMAYLL43;
-				INFOPLIST_FILE = EthOSRebootMonitor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EthOSRebootMonitor/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
